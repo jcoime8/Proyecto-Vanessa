@@ -1,0 +1,18 @@
+<div class="row">
+    <ng-container *ngIf="dragonPer && dragonPer.items && dragonPer.items.length > 0 else noPersonajes">
+        <div class="card col-6 mx-auto mb-3" style="width: 18rem;" *ngFor="let pers of dragonPer.items">
+          <img src="{{pers.image}}" class="card-img-top mx-auto" alt="..." style="width: 100px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Nombre: {{pers.name}}</h5>
+            <p class="card-text">ID: {{pers.id}}</p>
+            <a href="#" class="btn btn-primary mx-auto d-block">Mas info</a>
+          </div>
+        </div>
+    </ng-container>
+    
+    <ng-template #noPersonajes>
+        <div>
+            <p>Error no se a personajes</p>
+        </div>
+    </ng-template>
+</div>

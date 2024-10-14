@@ -1,0 +1,19 @@
+<div class="row">
+  <ng-container *ngIf="cocteles && cocteles.drinks && cocteles.drinks.length > 0 else noCocteles">
+    <div class="card mx-auto mb-3" style="width: 18rem;" *ngFor="let coc of cocteles.drinks">
+      <img *ngIf="coc['strDrinkThumb']" [src]="coc['strDrinkThumb']" class="card-img-top mx-auto" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ coc['strDrink'] }}</h5>
+        <p class="card-text">{{ coc['strAlcoholic'] }}</p>
+        <a href="#" class="btn btn-primary mx-auto d-block w-100">Mas info</a>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noCocteles>
+    <div>
+      <p>No se han encontrado cocteles</p>
+    </div>
+  </ng-template>
+</div>
+

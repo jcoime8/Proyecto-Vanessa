@@ -1,0 +1,19 @@
+<div class="row">
+  <ng-container *ngIf="pokemonAll && pokemonAll.results && pokemonAll.results.length > 0; else noPokemon">
+    <div class="card animate__bounce col-6 mx-auto mb-3" style="width: 300px;" *ngFor="let pokemon of pokemonAll.results">
+      <img src="{{pokemon.data?.sprites?.other?.['official-artwork']?.front_default}}" class="card-img-top" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">{{pokemon.name}}</h5>
+        <p class="card-text">{{pokemon.data?.base_experience}}</p>
+        <a href="#" class="btn btn-primary mx-auto d-block">Mas Info</a>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noPokemon> 
+    <div class="col-12">
+      <div class="alert alert-warning">
+        <p>No hay pokemons</p>
+      </div>
+    </div>
+  </ng-template>
+</div>
