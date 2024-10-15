@@ -11,4 +11,5 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class CardComponent {
   @Input() public cocteles:cocteles| undefined
+  loadingImg:boolean = false
 }

@@ -12,4 +12,5 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class DbzComponent {
   @Input() public dragonPer: dragonball| undefined
+  loadingImg:boolean = false
 }

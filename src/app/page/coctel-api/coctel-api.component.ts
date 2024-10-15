@@ -22,7 +22,6 @@ export class CoctelApiComponent implements OnInit {
           console.log('no hay cocteles');
         } else {
           this.coctelAll = cocteles;
-          console.log('coctelAll', this.coctelAll);
         }
       },
       (error) => {
