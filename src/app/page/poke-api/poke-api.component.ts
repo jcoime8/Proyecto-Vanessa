@@ -27,7 +27,6 @@ export class PokeApiComponent implements OnInit {
           })
         })
         this.pokemons = pokemonAll
-        
       })
   }
 
