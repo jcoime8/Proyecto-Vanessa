@@ -8,6 +8,7 @@ import { cocteles } from '../interfaces/coctel';
 })
 export class CoctelService {
   coctel:string = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f='
+
   constructor(
     private http:HttpClient
   ) { }
@@ -16,7 +17,9 @@ export class CoctelService {
     return this.http.get<cocteles>(`${this.coctel}a`)
   }
 
-  getPaginacionCoctel(letra:string):Observable<cocteles>{
+  getPaginacionCoctel(letra:string = 'a'):Observable<cocteles>{
     return this.http.get<cocteles>(`${this.coctel}${letra}`)
   }
+
+
 }
