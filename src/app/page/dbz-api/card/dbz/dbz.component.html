@@ -25,7 +25,7 @@
           <div class="card-body">
             <h5 class="card-title">Nombre: {{pers.name}}</h5>
             <p class="card-text">ID: {{pers.id}}</p>
-            <a href="#" class="btn btn-primary mx-auto d-block">Mas info</a>
+            <li  class="btn btn-primary mx-auto d-block" (click)="openModal(pers.data!)">Mas info</li>
           </div>
         </div>
     </ng-container>
@@ -36,3 +36,5 @@
         </div>
     </ng-template>
 </div>
+
+<app-nodal></app-nodal>

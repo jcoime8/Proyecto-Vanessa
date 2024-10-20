@@ -4,10 +4,17 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
+import { fireBaseconfing } from './envioroment/firebase';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import {provideAuth, getAuth} from '@angular/fire/auth';
+import { from } from 'rxjs';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
     provideRouter(routes),
-    provideClientHydration()]
+    provideClientHydration(),
+    provideFirebaseApp(() => initializeApp(fireBaseconfing)),
+    provideAuth(() => getAuth())
+  ]
 };

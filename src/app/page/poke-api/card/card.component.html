@@ -28,8 +28,8 @@
       <div class="card-body">
         <h5 class="card-title">{{ pokemon.name }}</h5>
         <p class="card-text">{{ pokemon.data?.base_experience }}</p>
-        <a href="#" class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#pokemonModal">Mas
-          Info</a>
+        <li class="btn btn-primary mx-auto d-block" (click)="openModal(pokemon.data!)">Mas
+          Info</li>
       </div>
     </div>
   </ng-container>
@@ -41,3 +41,5 @@
     </div>
   </ng-template>
 </div>
+
+<app-modal></app-modal>
