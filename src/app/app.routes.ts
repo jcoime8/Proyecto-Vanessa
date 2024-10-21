@@ -4,6 +4,7 @@ import { DbzApiComponent } from './page/dbz-api/dbz-api.component';
 import { PokeApiComponent } from './page/poke-api/poke-api.component';
 import { CoctelApiComponent } from './page/coctel-api/coctel-api.component';
 import { ErrorComponent } from './page/error/error.component';
+import { AuthGuard } from './guard/auth.guard';
 
 export const routes: Routes = [
     {path: '', redirectTo:'home', pathMatch:'full'},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path: 'Dbz', component:DbzApiComponent},
     {path:'pokemon', component:PokeApiComponent},
     {path:'coctel', component:CoctelApiComponent},
+    {path:'miapi', loadChildren: () => import('./page/mi-api/miapi.routers.module').then(m=> m.MiapiRoutersModule), canActivate: [AuthGuard]},
     {path:'**', component:ErrorComponent}
 ];
