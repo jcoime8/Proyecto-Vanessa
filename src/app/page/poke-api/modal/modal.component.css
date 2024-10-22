@@ -1,74 +1,52 @@
-/* General Modal Styles */
-.modal-content {
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
+/* Modal Header */
 .modal-header {
-  background-color: #343a40;
-  color: #f8f9fa;
-  padding: 20px;
-  border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Añadir un poco de relleno */
 }
 
-.modal-tittle {
-  font-size: 1.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0;
+/* Título del modal */
+.modal-title {
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    color: #333; /* Color más oscuro */
 }
 
-.btn-close {
-  background: transparent;
-  border: none;
-  font-size: 1.25rem;
-  color: #f8f9fa;
-}
-
-.btn-close:hover {
-  color: #e74c3c;
-}
-
+/* Modal Body */
 .modal-body {
-  padding: 20px;
-  background-color: #ffffff;
-  color: #333;
+    text-align: center; /* Centrar el texto */
 }
 
-/* Image in Modal */
+/* Imagen del Pokémon */
 .modal-body img {
-  border-radius: 5px;
-  width: 100%;
-  object-fit: contain;
-  margin-bottom: 20px;
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
-/* Pokemon Info */
+/* Estilo de los datos del Pokémon */
 .modal-body p {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #666;
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #555; /* Color gris más oscuro */
+    margin: 5px 0; /* Espaciado entre párrafos */
 }
 
+/* Habilidades, Tipos y Estadísticas */
 .modal-body h4 {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  text-transform: capitalize;
-  color: #343a40;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 8px;
+    font-weight: bold; /* Negrita */
+    color: #007bff; /* Color azul */
+    margin-top: 20px; /* Espaciado superior */
 }
 
-/* List Styles */
-.modal-body ul {
-  padding-left: 0;
-  margin-bottom: 15px;
+/* Listas no ordenadas */
+.list-unstyled {
+    padding-left: 0; /* Sin padding */
 }
 
-.modal-body li {
-  font-size: 0.9rem;
-  color: #555;
-  padding: 4px 0;
-  list-style-type: none
+/* Asegurarse de que cada columna sea flexible */
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos en la columna */
 }

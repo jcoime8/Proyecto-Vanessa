@@ -1,6 +1,6 @@
 <div class="row">
   <ng-container *ngIf="cocteles && cocteles.drinks && cocteles.drinks.length > 0 else noCocteles">
-    <div class="card mx-auto mb-3" style="width: 18rem;" *ngFor="let coc of cocteles.drinks">
+    <div class="card mx-auto mb-3 drink-card" style="width: 18rem;" *ngFor="let coc of cocteles.drinks">
       
       <div *ngIf="!loadingImg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="176"
@@ -17,14 +17,16 @@
           </g>
         </svg>
       </div>
-      <img *ngIf="coc['strDrinkThumb']"  [src]="coc['strDrinkThumb']" class="card-img-top mx-auto" alt="..."
+
+      <img *ngIf="coc['strDrinkThumb']"  [src]="coc['strDrinkThumb']" class="card-img-top mx-auto drink-image" alt="..."
       loading="lazy" (load)="loadingImg=true">
+
       <div class="card-body">
         <h5 class="card-title">{{ coc['strDrink'] }}</h5>
         <p class="card-text">ID: {{ coc['idDrink'] }}</p>
         <p class="card-text">{{ coc['strAlcoholic'] }}</p>
         <p class="card-text">{{ coc['strCategory'] }}</p>
-        <li  class="btn btn-primary mx-auto d-block w-100" *ngIf="coc" (click)="openModal(coc)">Mas info</li>
+        <li  class="btn btn-primary mx-auto d-block w-100" *ngIf="coc" (click)="openModal(coc)">Más info</li>
       </div>
     </div>
   </ng-container>
@@ -35,5 +37,6 @@
     </div>
   </ng-template>
 </div>
+
 
 <app-modal></app-modal>
