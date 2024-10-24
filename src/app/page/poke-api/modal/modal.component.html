@@ -3,13 +3,12 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-tittle">{{pokemonAll.name}}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                        class="bi bi-x"></i></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
                 <div class="row">
-                    <img class="col-8" src="{{pokemonAll.sprites.other?.['official-artwork']?.front_default}}" alt="">
+                    <img class="col-8 mx-auto" src="{{pokemonAll.sprites.other?.['official-artwork']?.front_default}}" alt="">
                     <!-- Info Pokemon -->
                     <div class="col-4 ">
                         <p class="ms-1">ID: {{pokemonAll.id}}</p>

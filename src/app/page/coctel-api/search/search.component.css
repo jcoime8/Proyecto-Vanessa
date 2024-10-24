@@ -1,28 +1,55 @@
 .input-group {
-  max-width: 600px; /* Limitar el ancho máximo del grupo de entrada */
-  margin: 0 auto; /* Centrar el grupo de entrada */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.input-group .form-control {
-  border-radius: 25px 0 0 25px; /* Bordes redondeados para el input */
-  padding: 15px; /* Relleno interno para mayor comodidad */
-  transition: box-shadow 0.3s; /* Efecto de transición */
+.form-control {
+  border: 2px solid #28a745; /* Azul */
+  border-right: none;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.input-group .form-control:focus {
-  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5); /* Sombra al hacer foco */
-  border-color: #0d6efd; /* Cambio de color del borde al hacer foco */
+.form-control:focus {
+  border-color: #28a745; /* Verde al enfocar */
+  box-shadow: 0 0 8px #28a745;
 }
 
-.input-group .btn {
-  border-radius: 0 25px 25px 0; /* Bordes redondeados para el botón */
-  padding: 15px; /* Relleno interno para el botón */
-  transition: background-color 0.3s, transform 0.2s; /* Efectos de transición */
+::placeholder {
+  color: #888;
+  font-style: italic;
 }
 
-.input-group .btn:hover {
-  background-color: #0d6efd; /* Color de fondo al pasar el mouse */
-  color: white; /* Color del texto al pasar el mouse */
-  transform: scale(1.05); /* Aumento de tamaño al pasar el mouse */
+.btn-outline-primary {
+  border: 2px solid #1e90ff; /* Azul */
+  color: #1e90ff;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #28a745; /* Verde al hacer hover */
+  color: #fff;
+  border-color: #28a745;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 8px #ff6347; /* Naranja al enfocar */
+  border-color: #ff6347;
+}
+
+.btn-outline-primary i {
+  font-size: 1.2rem;
+}
+
+.input-group .form-control:disabled, 
+.input-group .btn-outline-primary:disabled {
+  background-color: #f1f1f1;
+  border-color: #d3d3d3;
+  color: #aaa;
 }
 

@@ -1,52 +1,74 @@
-/* Modal Header */
+.modal-content {
+  background-color: #f8f9fa;
+  border: 2px solid #1e90ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px; /* Añadir un poco de relleno */
+  border-bottom: 1px solid #1e90ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Título del modal */
-.modal-title {
-    font-size: 1.8rem; /* Tamaño de fuente más grande */
-    color: #333; /* Color más oscuro */
+.modal-header .modal-tittle {
+  font-size: 1.8rem;
+  color: #007bff;
+  text-transform: capitalize;
+  margin: 0;
 }
 
-/* Modal Body */
+.btn-close i {
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-close i:hover {
+  color: #ff6347;
+}
+
 .modal-body {
-    text-align: center; /* Centrar el texto */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Imagen del Pokémon */
 .modal-body img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espaciado inferior */
+  width: 150px; /* Imagen más pequeña */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de los datos del Pokémon */
+.modal-body .col-4 {
+  margin-top: 10px;
+}
+
 .modal-body p {
-    font-size: 1.2rem; /* Tamaño de fuente más grande */
-    color: #555; /* Color gris más oscuro */
-    margin: 5px 0; /* Espaciado entre párrafos */
+  font-size: 1.1rem;
+  color: #343a40;
 }
 
-/* Habilidades, Tipos y Estadísticas */
 .modal-body h4 {
-    font-weight: bold; /* Negrita */
-    color: #007bff; /* Color azul */
-    margin-top: 20px; /* Espaciado superior */
+  color: #007bff;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
-/* Listas no ordenadas */
-.list-unstyled {
-    padding-left: 0; /* Sin padding */
+.modal-body ul {
+  padding: 0;
+  list-style: none;
 }
 
-/* Asegurarse de que cada columna sea flexible */
-.col-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrar elementos en la columna */
+.modal-body li {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.modal-body small {
+  color: #ff6347;
 }
