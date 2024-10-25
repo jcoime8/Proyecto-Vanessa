@@ -15,9 +15,10 @@
           </g>
         </svg>
       </div>
-
-      <img src="{{pers.image}}" class="card-img-top circular-img mx-auto" alt="..."
-        loading="lazy" (load)="loadingImg = true">
+      <div class="image-container">
+        <img src="{{pers.image}}" class="card-img-top circular-img mx-auto" alt="..."
+          loading="lazy" (load)="loadingImg = true">
+      </div>
       
       <div class="card-body">
         <h5 class="card-title">Nombre: {{pers.name}}</h5>

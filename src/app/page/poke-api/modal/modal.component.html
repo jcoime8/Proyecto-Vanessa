@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-tittle">{{pokemonAll.name}}</h1>
+                <h1 class="modal-title">{{pokemonAll.name}}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -10,11 +10,11 @@
                 <div class="row">
                     <img class="col-8 mx-auto" src="{{pokemonAll.sprites.other?.['official-artwork']?.front_default}}" alt="">
                     <!-- Info Pokemon -->
-                    <div class="col-4 ">
-                        <p class="ms-1">ID: {{pokemonAll.id}}</p>
-                        <p class="ms-1">Altura: {{pokemonAll.height}}</p>
-                        <p class="ms-1">Peso: {{pokemonAll.weight}}</p>
-                        <p class="ms-1">Experiencia: {{pokemonAll.base_experience}}</p>
+                    <div class="col-4">
+                        <p class="info-text">ID: {{pokemonAll.id}}</p>
+                        <p class="info-text">Altura: {{pokemonAll.height}}</p>
+                        <p class="info-text">Peso: {{pokemonAll.weight}}</p>
+                        <p class="info-text">Experiencia: {{pokemonAll.base_experience}}</p>
                     </div>
 
                     <div class="row">
@@ -45,7 +45,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

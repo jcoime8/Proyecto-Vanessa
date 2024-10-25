@@ -2,13 +2,13 @@ import { ModalComponent } from './../../../poke-api/modal/modal.component';
 import { Component, Input, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
 import { DbzService } from '../../services/dbz.service';
 import { dragonball, personoaje } from '../../interfaces/dragonball';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf, NgStyle } from '@angular/common';
 import { NodalComponent } from '../../nodal/nodal.component';
 
 @Component({
   selector: 'app-dbz',
   standalone: true,
-  imports: [NgIf, NgFor, NodalComponent],
+  imports: [NgIf, NgFor, NodalComponent, NgStyle],
   templateUrl: './dbz.component.html',
   styleUrl: './dbz.component.css'
 })
