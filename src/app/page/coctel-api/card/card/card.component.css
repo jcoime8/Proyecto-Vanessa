@@ -1,16 +1,16 @@
 /* Estilos de la tarjeta */
 .drink-card {
-  border: 1px solid #28a745; /* Borde verde claro */
+  border: 1px solid #0e7a7a; /* Borde verde claro */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Sombra con tono verde */
+  box-shadow: 0 4px 8px #4f4f4f; /* Sombra con tono verde */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #f0fff0; /* Fondo verde muy claro */
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo verde muy claro */
   padding-top: 12px;
 }
 
 .drink-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.4);
+  box-shadow: 0 8px 16px #4f4f4f;
 }
 
 .card-title {
@@ -23,19 +23,19 @@
 }
 
 .btn-primary {
-  background-color: #28a745; /* Botón con verde claro */
-  border-color: #28a745;
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Botón con verde claro */
+  border-color: #0e7a7a;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #218838; /* Verde más oscuro en hover */
-  border-color: #1e7e34;
+  background: #0e7a7a; /* Verde más oscuro en hover */
+  border-color: #0e7a7a;
 }
 
 /* Estilos para la imagen */
 .drink-image {
-  border-radius: 10px;
+  border-radius: 50%;
   width: 100%;
   height: auto;
 }

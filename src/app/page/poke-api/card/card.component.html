@@ -26,8 +26,9 @@
         loading="lazy" (load)="loadingImg = true" />
 
       <div class="card-body">
-        <h5 class="card-title">{{ pokemon.name }}</h5>
-        <p class="card-text">{{ pokemon.data?.base_experience }}</p>
+        <h5 class="card-title">Nombre: {{ pokemon.name }}</h5>
+        <p class="card-text">Experiencia {{ pokemon.data?.base_experience }}</p>
+        <p>ID: {{pokemon.data?.order}}</p>
         <li class="btn btn-primary mx-auto d-block" (click)="openModal(pokemon.data!)">Mas
           Info</li>
       </div>

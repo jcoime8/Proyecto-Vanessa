@@ -15,9 +15,9 @@
 .page-link {
   display: block;
   padding: 10px 20px;
-  color: #00ff15;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  color: white;
+  background: transparent;
+  border: 1px solid linear-gradient(to right,  #138b9b, #535353);
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -26,15 +26,15 @@
 /* Hover and active states */
 .page-link:hover {
   color: #fff;
-  background-color: #00ff15;
-  border-color: #00ff2a;
+  background: linear-gradient(to right,  #138b9b, #535353);
+  border-color: linear-gradient(to right,  #138b9b, #535353);
 }
 
 .page-item.disabled .page-link {
   color: #6c757d;
   pointer-events: none;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
+  background: transparent;
+  border-color: linear-gradient(to right,  #138b9b, #535353);
 }
 
 /* Centering pagination */

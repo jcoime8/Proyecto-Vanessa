@@ -1,13 +1,13 @@
 /* Modal */
 .modal-content {
   border-radius: 10px;
-  background-color: #f0fff0; /* Fondo verde muy claro */
+  background: linear-gradient(to right, #0e7a7a81, #4f4f4f80); /* Fondo verde muy claro */
   border: 1px solid #28a745; /* Borde verde claro */
   box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2); /* Sombra con un toque de verde */
 }
 
 .modal-header {
-  background-color: #28a745 !important; /* Fondo verde claro */
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo verde claro */
   color: white; /* Texto blanco */
   border-bottom: none;
 }
@@ -35,7 +35,7 @@
 
 .modal-footer {
   border-top: none;
-  background-color: #f0fff0; /* Fondo verde muy claro */
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo verde muy claro */
 }
 
 .btn-secondary {
